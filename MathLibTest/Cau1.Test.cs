@@ -9,11 +9,11 @@
             if(!IsInteger(x)||!IsInteger(y)) throw new InvalidOperationException("Số thứ nhất và số thứ 2 phải là số nguyên");
             return (int)(x * y);
         }
-        [TestCase(10, 5, 50)]           
-        [TestCase(-10, 5, -50)]      
-        [TestCase(0, 5, 0)]          
-        [TestCase(1000, 0, 0)]      
-        [TestCase(-7, -3, 21)]        
+        [TestCase(10, 3, 30)]           
+        [TestCase(-10, 3, -30)]      
+        [TestCase(0, 8, 0)]          
+        [TestCase(10000, 0, 0)]      
+        [TestCase(-7, 3, -21)]        
         [TestCase(int.MaxValue, 1, int.MaxValue)] 
         [TestCase(int.MinValue, 1, int.MinValue)] 
         [TestCase(1, 1, 1)]
